@@ -1,0 +1,335 @@
+/* Fonts link  */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Merriweather:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Fuzzy Bubbles, Montserrat;
+     overflow-x: hidden;
+}
+ 
+/*header*/
+.container-header {
+    width: 100vw;
+    height: 4.063rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+/* navbar item list */
+.navbar {
+    width: 100vw;
+    height: 4.063rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    margin-right: 2.5rem;
+}
+.list li a i {
+    font-size: 2.5rem;
+    color:rgb(107, 62, 2);
+    transition-property:color, transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms ;
+}
+ .list li a i:hover {
+    color: rgb(80, 81, 85);
+    transform: translateY(10px);
+}
+/*sign in/up button */
+.sign-in {
+    padding: 16px;
+    border: none;
+    font-size: x-large;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+    transition-property: color, background;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    margin-left: 30px;
+    color: rgb(12, 7, 7);
+    background: rgb(160, 131, 124);
+    position: absolute;
+    left: 0.313rem;
+    font-family: Fuzzy Bubbles;
+    border-radius: 10px 100px / 120px;
+}
+.sign-in:hover {
+    background-color: rgb(107, 62, 2);
+    color: white;
+}
+/*heading*/
+
+.background-image {
+    background-image: url(https://www.messika.com/media/catalog/tmp/category/messika-landing-joaillerie-mobile.jpg);
+    background-position: 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 46.875rem;
+}
+.title {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 3.125rem;
+    top: 9.375rem;
+}
+.shop-button {
+  padding:18px;
+  border: none;
+  font-size: 1.5rem;
+  transition-property: color, background;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(175, 172, 172);
+  position: absolute;
+  right: 150px;
+  top: 250px;
+  font-family: Fuzzy Bubbles ;
+  border-radius: 30px;
+}
+.shop-button:hover {
+    background-color: rgb(160, 131, 124);
+}
+
+/*cards*/
+
+.pro-cards {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-top: 30px;
+  position: relative;
+  gap: 20px;
+}
+.cards {
+    width: 20.625rem;
+    height: 26.875rem;
+    z-index: 1;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin: 15px;
+}
+.cards:hover{
+    box-shadow: 2px 2px 9px rgb(0, 0, 0);
+    transform: scale(1.03);
+}
+.img-card {
+    width: 100%;
+    height: 17.5rem;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+}
+.img-card:hover {
+    transform: scale(1.1);
+}
+/* caption*/
+.caption {
+    width: 80%;
+    font-size:2rem;
+    margin:auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(186, 186, 186);
+    margin-bottom: 20px;
+    scroll-padding-bottom: 10px;
+}
+  /*icons*/
+.shop {
+    color: black;
+    background-color:rgb(173,181,189);
+    color: rgb(5, 5, 5);
+    padding: 13px;
+    font-size: 1rem;
+    margin: auto;
+    border-radius: 100%;
+    transition: padding 0.5s ease-in-out;
+}
+.shop:after {
+    float: right;
+    content: "buy";
+    display: none;
+    padding: 5px 0 0 17px;
+    font-size: 0.7rem;
+    text-align: end;
+}
+.shop:hover {
+    padding-right: 30px;
+    border-radius: 20px;
+}
+.shop:hover:after{
+    display: inline;
+}
+.heart {
+    background-color:rgb(173,181,189);
+    color: red;
+    padding:13px;
+    font-size: 1rem;
+    margin: auto;
+    border-radius: 100%;
+    transition: padding 0.5s ease-in-out;
+}
+.heart:after{
+    float:right;
+    content: "favorite";
+    display: none;
+    padding:5px 0 0 17px;
+    font-size:1rem;
+    text-align: end;
+}
+.heart:hover {
+    padding-right: 30px;
+    border-radius: 20px;
+}
+.heart:hover:after {
+    display: inline;
+}
+.price {
+    float: right;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 10px;
+
+}
+
+.stars {
+    z-index: 2;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.stars {
+    color: gold;
+}
+.label {
+    position: relative;
+    z-index: 3;
+}
+.top-label {
+    position:absolute;
+    left: 235px;
+    top: 5px;
+    background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    padding:7px;
+    font-size: 0.9rem;
+}
+/*footer*/
+.footer {
+    width: 100vw;
+    height: 25rem;
+    background-image:url(https://messika.cdn-tech.io/media/wysiwyg/messika-landing-joaillerie-glamazone.jpg) ;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+/*about us*/
+.about {
+    background-color: rgba(245, 179, 146, 0.815);
+    width: 20rem;
+    height: 20.875rem;
+    margin-top: 10px;
+    padding:20px;
+    align-self: center;
+    justify-self: center;
+    transition: transform 0.5s ease-in-out;
+    font-size: 1.3rem;
+    line-height: 0.8rem;
+}
+.about h4 {
+    border-bottom:  1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.about p {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/* contact us*/
+.contact {
+    background-color:rgba(245, 179, 146, 0.815);
+    width: 31.25rem;
+    height: 14.063rem;
+    margin-top: 4.375rem;
+    padding:20px;
+    align-self: center;
+    justify-self: center;
+    transition: transform 0.5s ease-in-out;
+} 
+.about h4 {
+    border-bottom:  1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.icons {
+    list-style: none;
+    display: flex;
+    margin-top:20px;
+    justify-content: center;
+}
+.icons li a i {
+    padding: 30px;
+    font-size: 2rem;
+    color:rgb(252, 88, 34);
+    transition-property: color, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.icon li a i:hover {
+    color: crimson;
+    transform: translatey(10px);
+}
+about:hover {
+    transform :scale(1.08);
+}
+.contact:hover {
+     transform: scale(1.08)
+}
+/*media*/
+@media screen and (max-width: 550px) {
+    .list li a i{
+        font-size: 1.3rem;
+    }
+
+}
+.heading {
+     display: flex;
+     flex-direction: column;
+
+ }
+.footer h4 {
+    text-align: center;
+}
